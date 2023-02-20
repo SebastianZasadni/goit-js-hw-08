@@ -30,8 +30,8 @@ form.addEventListener("submit", handleSubmit);
     };
 
 if (localStorage.length !== 0) {
-const user = localStorage.getItem('feedback-form-state');
- user = JSON.parse(user);
- email.value = user.email;
- message.value = user.message;
+ let newUser = localStorage.getItem('feedback-form-state');
+ newUser = JSON.parse(newUser);
+ email.value = newUser.email;
+ message.value = newUser.message;
 };
